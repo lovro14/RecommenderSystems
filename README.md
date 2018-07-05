@@ -26,6 +26,18 @@ The prominent packages are:
 - [MovieLens 20M Dataset](https://grouplens.org/datasets/movielens/20m/)
 
 
+###Run
+```
+mkdir datasets
+mkdir tf_logs
+mkdir pretrained_models
+mkdir tf_logs/ml-100k
+mkdir tf_logs/ml-1m
+mkdir tf_logs/ml-20m
+mkdir pretrained_models/ml-100k
+mkdir pretrained_models/ml-1m
+mkdir pretrained_models/ml-20m
+```
 
 
  ### Training
