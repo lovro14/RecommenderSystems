@@ -119,12 +119,9 @@ tensorboard --logdir tf_logs/ml-1m
 tensorboard --logdir tf_logs/ml-20m
 ```
 
-*Walk in latent space*
----
-*Interpolation between a two random latent vector z over 10 random points, shows that generated samples have smooth transitions.*
+## Latent factor model
 
-
-<img src="images/latent_fashion.png" width="350"> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;   <img src="images/latent-mnist.png" width="350">
+<img src="images/latent-factor-model.png" width="350"> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;   <img src="images/latent-mnist.png" width="350">
 
 
 
