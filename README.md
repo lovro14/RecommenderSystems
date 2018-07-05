@@ -98,7 +98,9 @@ python main.py --dataset ml-20m \
 Start tensorboard:
 
 ```
-tensorboard --logdir ./logs/
+tensorboard --logdir tf_logs/ml-100k
+tensorboard --logdir tf_logs/ml-1m
+tensorboard --logdir tf_logs/ml-20m
 ```
 
 *Walk in latent space*
