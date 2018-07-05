@@ -1,10 +1,12 @@
-## Pytorch code for GAN models
-This is the pytorch implementation of 3 different GAN models using same convolutional architecture.
+## Tensorflow code for model based recommender systems
+This is the Tensorflow implementation of 4 different recommender models.
 
 
-- DCGAN (Deep convolutional GAN)
-- WGAN-CP (Wasserstein GAN using weight clipping)
-- WGAN-GP (Wasserstein GAN using gradient penalty)
+- Latent factor model recommender system
+- Deep neural network based recommender system
+- Ensemble of latent factor model and deep neural network model without transfer learning
+- Ensemble of latent factor model and deep neural network model with transfer learning
+
 
 
 
@@ -14,15 +16,13 @@ The prominent packages are:
 * numpy
 * scikit-learn
 * tensorflow 1.5.0
-* pytorch 0.3.0
-* torchvision 0.3.0
+* pandas 0.23.1
 
 To install all the dependencies quickly and easily you should use __pip__
 
 ```python
 pip install -r requirements.txt
 ```
-
 
 
  *Training*
