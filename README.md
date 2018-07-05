@@ -124,7 +124,7 @@ tensorboard --logdir tf_logs/ml-20m
 <img src="images/latent-factor-model.png" width="whatever" height="whatever"> 
 
 
-## deep neural network model
+## Deep neural network model
 
 <img src="images/deep-neural-network-model.png" width="whatever" height="whatever"> 
 
@@ -134,24 +134,11 @@ tensorboard --logdir tf_logs/ml-20m
 
 
 
-*Generated examples MNIST, Fashion-MNIST, CIFAR-10*
+*RMSE, Precision, Recall and F1-score*
 ---
 
-<img src="images/CIFAR-10.png" width="800">
-
-
-<img src="images/Fashion-MNIST.png" width="770">
-
-<img src="images/MNIST.png" width="800">
-
-
-
-*Inception score*
----
-  [About Inception score](https://arxiv.org/pdf/1801.01973.pdf)
-
-
-<img src="images/inception_graph_generator_iters.png" width="400" > &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;   <img src="images/inception_graph_time.png" width="400">
+<img src="images/rmse.png" width="400" > &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;   <img src="images/precision.png" width="400">
+<img src="images/recall.png" width="400" > &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;   <img src="images/f1.png" width="400">
 
 
 *Useful Resources*
