@@ -18,12 +18,6 @@ The prominent packages are:
 * tensorflow 1.5.0
 * pandas 0.23.1
 
-To install all the dependencies quickly and easily you should use __pip__
-
-```python
-pip install -r requirements.txt
-```
-
 
 
 ### Dataset
@@ -33,35 +27,74 @@ pip install -r requirements.txt
 
 
 
- ### Dataset
+
+ ### Training
  ---
-Running training of DCGAN model on Fashion-MNIST dataset:
+Running training of latent factor model on MovieLens 1M Dataset:
 
 
 ```
-python main.py --model DCGAN \
-               --is_train True \
-               --download True \
-               --dataroot datasets/fashion-mnist \
-               --dataset fashion-mnist \
-               --epochs 30 \
-               --cuda True \
-               --batch_size 64
+python main.py --dataset ml-1m \
+               --model latent-factor-model \
+               --epoch 40 \
+               --batch_size 1000 \
+               ---dimension 8 \
+               --learning_rate 0.001 \
+               --optimizer Adam \
+               --dropout_rate 0.5 \
+               --regularization_factor 0.05 \
+               --max_checkout_without_progress 20
 ```
 
-Running training of WGAN-GP model on CIFAR-10 dataset:
+Running training of deep neural network model on MovieLens 20M Dataset:
+
 
 ```
-python main.py --model WGAN-GP \
-               --is_train True \
-               --download True \
-               --dataroot datasets/cifar \
-               --dataset cifar \
-               --generator_iters 40000 \
-               --cuda True \
-               --batch_size 64
-```
+python main.py --dataset ml-20m \
+               --model deep-neural-network-model \
+               --epoch 40 \
+               --batch_size 1000 \
+               --dimension 8 \
+               --learning_rate 0.005 \
+               --optimizer Adam \
+               --dropout_rate 0.5 \
+               --regularization_factor 0.1 \
+               --max_checkout_without_progress 20
+```              
 
+Running training of ensemble model without transfer learning on MovieLens 20M Dataset:
+
+
+``` 
+python main.py --dataset ml-20m \
+               --model ensemble-no-transfer-learning \
+               --epoch 40 \
+               --batch_size 1000 \
+               --dimension 8 \
+               --learning_rate 0.0001 \
+               --optimizer Adam \
+               --dropout_rate 0.5 \
+               --regularization_factor 0.1 \
+               --max_checkout_without_progress 20
+``` 
+
+
+
+Running training of ensemble model with transfer learning on MovieLens 20M Dataset:
+
+
+``` 
+python main.py --dataset ml-20m \
+               --model ensemble-transfer-learning  \
+               --epoch 40 \
+               --batch_size 1000 \
+               --dimension 8 \
+               --learning_rate 0.0001 \
+               --optimizer Adam \
+               --dropout_rate 0.5 \
+               --regularization_factor 0.1 \
+               --max_checkout_without_progress 20
+``` 
 Start tensorboard:
 
 ```
