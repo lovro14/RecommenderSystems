@@ -124,6 +124,13 @@ tensorboard --logdir tf_logs/ml-20m
 <img src="images/latent-factor-model.png" width="whatever" height="whatever"> 
 
 
+## deep neural network model
+
+<img src="images/deep-neural-network-model.png" width="whatever" height="whatever"> 
+
+## Ensemble
+
+<img src="images/ensemble.png" width="whatever" height="whatever"> 
 
 
 
