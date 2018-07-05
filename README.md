@@ -27,11 +27,13 @@ pip install -r requirements.txt
 
 
 ### Dataset
-- MovieLens 100K Dataset, https://grouplens.org/datasets/movielens/100k/
+- [MovieLens 100K Dataset](https://grouplens.org/datasets/movielens/100k/)
+- [MovieLens 1M Dataset](https://grouplens.org/datasets/movielens/1m/)
+- [MovieLens 20M Dataset](https://grouplens.org/datasets/movielens/20m/)
 
 
 
- *Training*
+ ### Dataset
  ---
 Running training of DCGAN model on Fashion-MNIST dataset:
 
