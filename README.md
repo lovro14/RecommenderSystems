@@ -75,6 +75,7 @@ python main.py --dataset ml-20m \
                --optimizer Adam \
                --dropout_rate 0.5 \
                --regularization_factor 0.1 \
+               --layers [64,32,16,8,1] \
                --max_checkout_without_progress 20
 ```              
 
@@ -91,6 +92,7 @@ python main.py --dataset ml-20m \
                --optimizer Adam \
                --dropout_rate 0.5 \
                --regularization_factor 0.1 \
+               --layers [64,32,16,8,1] \
                --max_checkout_without_progress 20
 ``` 
 
@@ -109,6 +111,7 @@ python main.py --dataset ml-20m \
                --optimizer Adam \
                --dropout_rate 0.5 \
                --regularization_factor 0.1 \
+               --layers [64,32,16,8,1] \
                --max_checkout_without_progress 20
 ``` 
 Start tensorboard:
