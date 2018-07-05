@@ -137,8 +137,8 @@ tensorboard --logdir tf_logs/ml-20m
 *RMSE, Precision, Recall and F1-score*
 ---
 
-<img src="images/rmse.png" width="400" > &nbsp; &nbsp;&nbsp;    <img src="images/precision.png" width="400">
-<img src="images/recall.png" width="400" > &nbsp; &nbsp;&nbsp;    <img src="images/f1.png" width="400">
+<img src="images/rmse.png" width="430" > &nbsp; &nbsp;&nbsp;    <img src="images/precision.png" width="430">
+<img src="images/recall.png" width="430" > &nbsp; &nbsp;&nbsp;    <img src="images/f1.png" width="430">
 
 
 *Useful Resources*
