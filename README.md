@@ -134,21 +134,16 @@ tensorboard --logdir tf_logs/ml-20m
 
 
 
-*RMSE, Precision, Recall and F1-score*
+## RMSE, Precision, Recall and F1-score
 ---
 
 <img src="images/rmse.png" width="430" > &nbsp; &nbsp;&nbsp;    <img src="images/precision.png" width="430">
 <img src="images/recall.png" width="430" > &nbsp; &nbsp;&nbsp;    <img src="images/f1.png" width="430">
 
 
-*Useful Resources*
+## Useful Resources
 ---
 
 
-- [WGAN reddit thread](https://www.reddit.com/r/MachineLearning/comments/5qxoaz/r_170107875_wasserstein_gan/)
-- [Blogpost](https://lilianweng.github.io/lil-log/2017/08/20/from-GAN-to-WGAN.html)
-- [Deconvolution and checkboard Artifacts](https://distill.pub/2016/deconv-checkerboard/)
-- [WGAN-CP paper](https://arxiv.org/pdf/1701.07875.pdf)
-- [WGAN-GP paper](https://arxiv.org/pdf/1704.00028.pdf)
-- [DCGAN paper](https://arxiv.org/pdf/1511.06434.pdf)
-- [Working remotely with PyCharm and SSH](https://medium.com/@erikhallstrm/work-remotely-with-pycharm-tensorflow-and-ssh-c60564be862d)
+- [Neural Collaborative Filtering - NUS Computing](https://www.comp.nus.edu.sg/~xiangnan/papers/ncf.pdf)
+- [Recommender Systems - The Textbook | Charu C. Aggarwal | Springer](https://www.springer.com/gb/book/9783319296579)
