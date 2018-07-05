@@ -9,6 +9,8 @@ def parse_args():
                         choices=['latent-factor-model', 'deep-neural-network-model', 'ensemble-no-transfer-learning',
                                  'ensemble-transfer-learning'], help='Four model implementations')
     parser.add_argument('--epochs', type=int, default=40, help='Number of epoch for training algorithm')
+    parser.add_argument('--max_checkout_without_progress', type=int, default=20,
+                        help='Max checkout without progress for early stopping strategy')
     parser.add_argument('--batch_size', type=int, default=256, help='The size of batch')
     parser.add_argument('--dimension', type=int, default=8, help='shared latent space dimension')
     parser.add_argument('--learning_rate', type=float, default=0.005, help='learning rate for model optimization')

@@ -61,7 +61,8 @@ class LatentFactorModel(Model):
         self.item = item
         self.rating = rating
 
-    def fit(self, user_ids_test, item_ids_test, ratings_test, rating_data_train, model_name, dataset, n_epoch=40):
+    def fit(self, user_ids_test, item_ids_test, ratings_test, rating_data_train, model_name, dataset, n_epoch=40,
+            max_checkout_without_progress=20):
         self.batch_number = len(rating_data_train) // self.batch_size
 
         self.close_session()
@@ -70,8 +71,6 @@ class LatentFactorModel(Model):
         with self._graph.as_default():
             self._build_graph()
 
-
-        max_checkout_without_progress = 100
         checkout_without_progress = 0
         min_test_error = np.infty
         latent_factor_rmse = []
@@ -139,4 +138,6 @@ class LatentFactorModel(Model):
                     value=[summary_pb2.Summary.Value(tag="MAE", simple_value=mae)])
                 summary_writer.add_summary(mae_summary, epoch)
 
+    def get_test_data_prediction(self):
+        return self.final_prediction_test_data
 

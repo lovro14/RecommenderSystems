@@ -34,5 +34,6 @@ class Model(object):
         if self._session:
             self._session.close()
 
-    def fit(self, user_ids_test, item_ids_test, ratings_test, rating_data_train, model_name, dataset, n_epoch=40):
+    def fit(self, user_ids_test, item_ids_test, ratings_test,
+            rating_data_train, model_name, dataset, n_epoch=40, max_checkout_without_progress=20):
         pass

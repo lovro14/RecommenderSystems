@@ -15,6 +15,7 @@ def main(args):
     if model_type != 'latent-factor-model':
         layers = eval(args.layers)
     n_epoch = args.epochs
+    max_checkout_without_progress = args.max_checkout_without_progress
     batch_size = args.batch_size
     dimension = args.dimension
     learning_rate = args.learning_rate
@@ -59,7 +60,8 @@ def main(args):
                               dropout_rate, layers=layers[:-1], optimizer_class=optimizer, reg_factor=regularization_factor,
                               transfer_learning=True)
 
-    model.fit(user_ids_test, item_ids_test, ratings_test, rating_data_train, model_name, dataset, n_epoch=n_epoch)
+    model.fit(user_ids_test, item_ids_test, ratings_test,
+              rating_data_train, model_name, dataset, n_epoch=n_epoch, max_checkout_without_progress=max_checkout_without_progress)
 
     predicted_ratings = model.get_test_data_prediction()
     evaluator = RecommenderEvaluator(rating_data_test, predicted_ratings, dataset)
