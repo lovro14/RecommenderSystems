@@ -121,7 +121,7 @@ tensorboard --logdir tf_logs/ml-20m
 
 ## Latent factor model
 
-<img src="images/latent-factor-model.png" width="1000" height="1000"> 
+<img src="images/latent-factor-model.png" width="1000" height="650"> 
 
 
 
